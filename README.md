@@ -38,10 +38,10 @@
 - 모드 저작권은 모드 제작자에게 있으며 **모드 파일을 공유해 드릴 수 없습니다**.
 
 ### 자세한 사용법
-- [위키](https://github.com/HyeongminKim/DiabloLauncher/wiki)를 참조해 주세요.
+- [위키](https://github.com/unstable-code/DiabloLauncher/wiki)를 참조해 주세요.
 
 ### 버그 제보
-- 버그 제보는 프로그램의 `[정보]->[버그신고...]` 버튼을 눌러 출력되는 로그를 첨부하여 [이슈를 작성](https://github.com/HyeongminKim/DiabloLauncher/issues)해 주세요.
+- 버그 제보는 프로그램의 `[정보]->[버그신고...]` 버튼을 눌러 출력되는 로그를 첨부하여 [이슈를 작성](https://github.com/unstable-code/DiabloLauncher/issues)해 주세요.
 - 작성하기 전 먼저 같은 문제를 겪고 있는 사람이 있는지 확인해 보세요.
 
 ### 데모 스크린 샷

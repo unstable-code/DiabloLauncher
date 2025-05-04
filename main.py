@@ -285,7 +285,7 @@ def UpdateProgram():
 
     if releaseMode:
         logformat(errorLevel.INFO, 'Portable DiabloLauncher release does not supported auto-update function yet. Please wait until loading releases page.')
-        webbrowser.open('https://github.com/HyeongminKim/DiabloLauncher/releases')
+        webbrowser.open('https://github.com/unstable-code/DiabloLauncher/releases')
         messagebox.showwarning('디아블로 런처', 'EXE 파일로 배포된 디아블로 런처는 자동 업데이트를 아직 지원하지 않습니다. 최신 버전은 브라우저에서 확인해 주세요.')
         return
 
@@ -331,7 +331,7 @@ def UpdateProgram():
         updateChecked = True
     elif call('where git > NUL 2>&1', shell=True) != 0 and updateChecked:
         logformat(errorLevel.INFO, 'git command does not currently installed. downloading master.zip')
-        webbrowser.open('https://github.com/HyeongminKim/DiabloLauncher/archive/refs/heads/master.zip')
+        webbrowser.open('https://github.com/unstable-code/DiabloLauncher/archive/refs/heads/master.zip')
         messagebox.showwarning('디아블로 런처', 'Git이 시스템에 설치되어 있지 않아 자동 업데이트를 사용할 수 없습니다. 다운로드 된 master.zip 파일 압축을 풀어 설치된 경로에 덮어쓰기해 주세요.')
     elif call('where git > NUL 2>&1', shell=True) != 0 and not updateChecked:
         logformat(errorLevel.WARN, 'Automatically checking for updates has been disabled. Run the updater function again to switch to legacy update mode. ')
@@ -1572,7 +1572,7 @@ def SetLauncherConfigurationValues(*args):
             if messagebox.askyesno('디아블로 런처 설정', '프로파일 또는 씬 이름을 명시하지 않을 경우, 게임 화면이 제대로 기록되지 않을 수 있습니다. 해당 설정 파일을 편집하시겠습니까?\n자세한 사항은 wiki를 참고해 주세요.'):
                 launchBlackboxSettings.set(0)
                 os.startfile(f'{os.environ.get("LocalAppData")}/DiabloLauncher/DiabloLauncher.config')
-                webbrowser.open('https://github.com/HyeongminKim/DiabloLauncher/wiki/envHelp#%EA%B2%8C%EC%9E%84-%EC%8B%9C%EC%9E%91%EC%8B%9C-%EB%85%B9%ED%99%94%EB%B0%A9%EC%86%A1-%EC%8B%9C%EC%9E%91')
+                webbrowser.open('https://github.com/unstable-code/DiabloLauncher/wiki/envHelp#%EA%B2%8C%EC%9E%84-%EC%8B%9C%EC%9E%91%EC%8B%9C-%EB%85%B9%ED%99%94%EB%B0%A9%EC%86%A1-%EC%8B%9C%EC%9E%91')
                 return
 
         dumpSettings(parentLocation.UserLocalAppData, ["General", "OBSStudioSettings", "LaunchOBSAfterGameStart"], launchBlackboxSettings.get() == 1)
@@ -2056,7 +2056,7 @@ def init():
             logformat(errorLevel.INFO, f"Game Executed: {'True' if gameExecuted else 'False'}")
             logformat(errorLevel.INFO, "===== End Report ======")
             logformat(errorLevel.WARN, 'NOTE: Please attach the terminal output after the code-page log')
-            webbrowser.open('https://github.com/HyeongminKim/DiabloLauncher/issues')
+            webbrowser.open('https://github.com/unstable-code/DiabloLauncher/issues')
 
     def AboutThisApp(*args):
         about = Tk()
@@ -2073,7 +2073,7 @@ def init():
             webbrowser.open('https://www.apple.com/kr/legal/intellectual-property/guidelinesfor3rdparties.html')
 
         def OpenDevSite():
-            webbrowser.open('https://github.com/HyeongminKim/DiabloLauncher')
+            webbrowser.open('https://github.com/unstable-code/DiabloLauncher')
 
         if releaseMode:
             if resolutionProgram == 1:
